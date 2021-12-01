@@ -319,6 +319,50 @@
 
       }
 
+      .valores-dropdown,.principios-dropdown{
+        margin: 0 2rem;
+        min-height:20rem;
+        padding-top: 1rem;
+
+        @include custom(600){
+          padding: 5rem 0;
+          min-height: 29rem;
+        }
+        @include desktop(){
+          padding-top: 0;
+          padding: 0 7% 5rem 7%;
+          min-height: 22.5rem;
+        }
+
+        h4{
+          font-size: 1.9rem;
+          @include tablet(){
+            font-size: 2.3rem;
+          }
+        }
+
+        p{
+          font-size: 1.6rem;
+          @include tablet(){
+            font-size: 2rem;
+          }
+        }
+
+        &.desactivado{
+          display: none;
+        }
+      }
+
+      .drop-button{
+
+        cursor: pointer;
+
+        &:hover p{
+          text-decoration: underline;
+        }
+      }
+
+
     }
 
     &.objetivo{
