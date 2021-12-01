@@ -53,8 +53,16 @@ footer{
       padding: 2% 0;
       font-size: 1.2rem;
 
+
       @include desktop(){
         font-size: 1.8rem;
+      }
+
+      a{
+        color: white;
+        text-decoration: none;
+
+        
       }
     }
   }
