@@ -1,0 +1,109 @@
+
+@use '../variables' as *;
+@use '../mixins' as *;
+
+
+
+
+.contacto-container {
+  color: white;
+  background: linear-gradient(180deg, #10100F 0%, #363635 100%);
+  min-height: 100vh;
+  width: 100%;
+
+  h2{
+    
+    color: white;
+
+    @include subTitle();
+    
+    margin-top: 2rem;
+    text-align: left;
+    margin-left: 2rem;
+
+
+    @include tablet(){
+      padding: 0;
+      margin-left: 4rem;
+    }
+
+    @include desktop(){
+      margin-left: 5%;
+      margin-bottom: 3rem;
+      align-self: flex-start;
+    }
+    
+    
+
+    
+  }
+
+}
+
+.contact-cards{
+
+  margin: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  @include tablet(){
+    margin: 0 auto;
+    width: 60%;
+  }
+
+  @include desktop(){
+    flex-direction: row;
+    width: 80%;
+  }
+  @include custom(1500){
+    width: 70%;
+  }
+
+  div{
+    padding: 3rem;
+    margin: 2rem 0;
+    background: rgba(0, 0, 0, 0.35);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    min-height: 21.5rem;
+    border-radius: 15px;
+
+    @include desktop(){
+      width: 30%;
+      min-width: 25rem;
+      min-height: 46rem;
+    }
+  }
+
+  img {
+    margin-bottom: 2rem;
+  }
+
+  p{
+    font-size: 1.6rem;
+    text-align: center;
+    
+  }
+
+  a{
+    width: 80%;
+    
+    @include buttonBlue();
+    margin-top: 1rem;
+    padding: 6%;
+    transition: 0.2s ease-in ;
+
+    @include buttonResponsive();
+
+    @include desktop(){
+      margin-top: 2rem;
+    }
+  }
+
+
+}

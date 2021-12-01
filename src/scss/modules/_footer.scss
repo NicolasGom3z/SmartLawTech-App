@@ -1,0 +1,108 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0c0c0c;
+  padding: 10% 0;
+
+  div{
+    width: 50%;
+
+    @include desktop(){
+      width: initial;
+    }
+  }
+
+  h4{
+    display: inline-block;
+    padding: 2% 0;
+    width: 75%;
+    margin: 0;
+    color: white;
+    font-size: 1.5rem;
+    border-bottom: 1px solid $smartBlue;
+    
+    @include desktop(){
+      display: block;
+      width: 100%;
+      font-size: 2rem;
+    }
+
+  }
+
+  ul{
+    margin: 0;
+    padding: 10% 0;
+
+    @include tablet(){
+      padding: 6% 0;
+    }
+
+    @include desktop(){
+      padding: 10% 0;
+    }
+
+    
+    li{
+      list-style: none;
+      color: white;
+      padding: 2% 0;
+      font-size: 1.2rem;
+
+      @include desktop(){
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  @include tablet(){
+    padding: 6%;
+  }
+
+  @include desktop(){
+    padding: 5% 0;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+}
+
+.redes {
+
+  @include desktop(){
+    text-align: center;
+  }
+
+
+  ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include tablet(){
+      display: flex;
+      align-items: center;
+    }
+
+    li{
+      @include tablet(){
+        padding: 0 2rem;
+      }
+    }
+
+  }
+
+  img{
+    
+    max-width: 3rem;
+
+    @include custom(500){
+      max-width: 4rem;
+    }
+  }
+
+}

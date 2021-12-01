@@ -1,0 +1,167 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+
+
+
+.equipo-container {
+
+  color: white;
+  background: linear-gradient(180deg, #10100F 0%, #363635 100%);
+
+  .title {
+    @include title();
+  }
+
+  section{
+    margin:2rem;
+
+    h2,h3{
+      @include subTitle();
+      text-align: left;
+      margin-top: 2rem;
+
+      
+
+    }
+    p{
+      font-size: 1.6rem;
+
+      @include tablet(){
+        padding: 0 10rem;
+        font-size: 2rem;
+      }
+
+    }
+
+    h3{
+      @include desktop(){
+        margin-bottom: 2rem;
+      }
+    }
+
+  }
+
+  article{
+    margin: 0 2rem;
+    margin-top: 8rem;
+
+    display: flex;
+    flex-direction: column;
+
+
+    @include tablet(){
+      padding: 0 10rem;
+    }
+    
+    @include desktop(){
+      min-height: 100vh;
+      flex-direction: row;
+      align-items: center;
+      margin-top: 0;
+    }
+
+    
+
+
+    .article-img{
+      text-align: center;
+
+      @include desktop(){
+        order: 2;
+        width: 100%;
+        max-width:40.5rem;
+      }
+
+
+    }
+
+    img{
+      max-width: 100%;
+
+      @include custom(500){
+        max-width: 60%;
+      }
+
+      @include tablet(){
+        max-width: 40%;
+      }
+
+      @include desktop(){
+        max-width: 100%;
+      }
+      
+    }
+
+    p{
+      font-size: 1.6rem;
+      margin-bottom: 0;
+
+      @include tablet(){
+        font-size: 2rem;
+      }
+    }
+
+
+    .article-title{
+      margin-bottom: 2rem;
+      h3{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+
+        @include tablet(){
+          font-size: 2.5rem;
+        }
+
+      }
+      p{
+        text-align: center;
+        margin: 0;
+        font-size: 1.6rem;
+
+        @include tablet(){
+          font-size: 2rem;
+        }
+      }
+
+    }
+
+
+    .article-content{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @include desktop(){
+        padding-right: 10rem;
+        
+      }
+    }
+
+
+    .linkedin{
+
+      margin-top: 2rem;
+      text-align: center;
+        img{
+          
+        width: 60px;
+      
+      }
+
+      @include desktop(){
+        margin-top: 2rem;
+      }
+    }
+
+    &:nth-child(2){
+      padding-bottom: 
+      8rem;
+    }
+
+  }
+
+
+
+
+}
