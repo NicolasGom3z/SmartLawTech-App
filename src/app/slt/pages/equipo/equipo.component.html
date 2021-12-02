@@ -25,56 +25,86 @@
 
       <div class="article-img">
         <img src="../../../../assets/icons/25. Juan.png" alt="Juan Jorge Almonacid">
-      </div>
-
-      <div class="article-content">
-
         <div class="article-title">
           <h3>Juan Jorge Almonacid Sierra</h3>
           <p>Director Ejecutivo - CEO</p>
           <p>Socio fundador</p>
-        </div>
-
-        <div class="article-main">
-          <p>Durante más de dos décadas ha adquirido una cualificada experiencia en la implementación de iniciativas tecnológicas útiles para prevenir, solucionar y amortiguar los efectos adversos de las crisis financieras y empresariales</p>
-          <p>Administrador financiero, abogado especializado en derecho privado-económico, magister y doctor en derecho de la Universidad Nacional de Colombia, en donde es profesor asociado y ha sido distinguido con las menciones laureada y meritoria a sus tesis de pregrado, especialización y doctorado. Autor de diversos libros y artículos relacionados con la transformación de la regulación de los mercados y la implementación de la inteligencia artificial en el ámbito jurídico</p>
-          <div class="linkedin">
-            <a href="https://www.linkedin.com/in/juan-jorge-almonacid-sierra-673581164/" target="_blank">
-              <img src="../../../../assets/icons/26.LinkedIn.svg" alt="LinkedIn">
-            </a>
+          <div [class]="ver_classJ">
+            <p  (click)="dropDownJuan()">
+              <small>ver más</small>
+            </p>
+            <div class="linkedin ">
+              <a href="https://www.linkedin.com/in/juan-jorge-almonacid-sierra-673581164/" target="_blank">
+                <img src="../../../../assets/icons/26.LinkedIn.svg" alt="LinkedIn">
+              </a>
+            </div>
           </div>
+          
         </div>
-
-      
       </div>
+
 
     </article>
 
-    <article>
+    <div class="dropdown">
+      <div [class]="dropdown_classJ">
+        <div class="contenedor">
+          <div class="article-main">
+            <p>Durante más de dos décadas ha adquirido una cualificada experiencia en la implementación de iniciativas tecnológicas útiles para prevenir, solucionar y amortiguar los efectos adversos de las crisis financieras y empresariales</p>
+            <p>Administrador financiero, abogado especializado en derecho privado-económico, magister y doctor en derecho de la Universidad Nacional de Colombia, en donde es profesor asociado y ha sido distinguido con las menciones laureada y meritoria a sus tesis de pregrado, especialización y doctorado. Autor de diversos libros y artículos relacionados con la transformación de la regulación de los mercados y la implementación de la inteligencia artificial en el ámbito jurídico</p>
+            
+            <div class="linkedin ">
+              <a href="https://www.linkedin.com/in/juan-jorge-almonacid-sierra-673581164/" target="_blank">
+                <img src="../../../../assets/icons/26.LinkedIn.svg" alt="LinkedIn">
+              </a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <article class="edwin">
       <div class="article-img">
         <img src="../../../../assets/icons/24.Edwin.png" alt="Edwin Bernal">
-      </div>
-      
-      <div class="article-content">
         <div class="article-title">
           <h3>Edwin Fernando Bernal Alba</h3>
           <p>Director de Proyectos - PMO</p>
           <p>Socio fundador</p>
-        </div>
-
-        <div class="article-main">
-          <p>Ingeniero de diseño y automatización electrónica de la Universidad de la Salle que durante veinte años ha adquirido una capacidad probada en implementación de proyectos de infraestructura tecnológica, sistemas de información y seguridad informática, y seguimiento y control en procesos de TI.</p>
-          <p>Cuenta con los títulos de project management professional del Intelligent Training – Project Manager Institute; certificado continuidad de negocio ISO 22301 y auditor interno seguridad de información ISO 27001 de SGS Colombia; y diplomado en telemática y negocios por internet de la Escuela Colombiana de Ingeniería</p>
-          <div class="linkedin">
-            <a href="#">
-              <img src="../../../../assets/icons/26.LinkedIn.svg" alt="LinkedIn">
-            </a>
+          <div [class]="ver_classE">
+            <p (click)="dropDownEdwin()">
+              <small>ver más</small>
+            </p>
+            <div class="linkedin">
+              <a href="#">
+                <img src="../../../../assets/icons/26.LinkedIn.svg" alt="LinkedIn">
+              </a>
+            </div>
           </div>
+          
         </div>
-        
       </div>
 
     </article>
+
+    <div class="dropdown">
+      <div [class]="dropdown_classE">
+        <div class="contenedor">
+          <div class="article-main">
+            <p>Ingeniero de diseño y automatización electrónica de la Universidad de la Salle que durante veinte años ha adquirido una capacidad probada en implementación de proyectos de infraestructura tecnológica, sistemas de información y seguridad informática, y seguimiento y control en procesos de TI.</p>
+            <p>Cuenta con los títulos de project management professional del Intelligent Training – Project Manager Institute; certificado continuidad de negocio ISO 22301 y auditor interno seguridad de información ISO 27001 de SGS Colombia; y diplomado en telemática y negocios por internet de la Escuela Colombiana de Ingeniería</p>
+            
+            <div class="linkedin ">
+              <a href="https://www.linkedin.com/in/juan-jorge-almonacid-sierra-673581164/" target="_blank">
+                <img src="../../../../assets/icons/26.LinkedIn.svg" alt="LinkedIn">
+              </a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
   </main>
 
 
