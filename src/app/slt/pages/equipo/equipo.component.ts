@@ -7,16 +7,31 @@ import { AnimationOptions } from 'ngx-lottie';
   styles: [
   ]
 })
-export class EquipoComponent implements OnInit {
+export class EquipoComponent  {
 
   logo : AnimationOptions = {
     path : 'assets/lottie/mountain/data.json'
   }
 
+  dropdown_classJ : string = "dropdown-juan no-display";
+  dropdown_classE : string = "dropdown-edwin no-display";
+  ver_classJ : string = "mas";
+  ver_classE : string = "mas";
+  
 
-  constructor() { }
+  dropDownJuan(){
 
-  ngOnInit(): void {
+    this.dropdown_classJ = "dropdown-juan slide-in-right";
+    this.ver_classJ = "no-display";
+
   }
+
+  dropDownEdwin(){
+
+    this.dropdown_classE = "dropdown-edwin slide-in-right";
+    this.ver_classE = "no-display";
+
+  }
+  
 
 }
