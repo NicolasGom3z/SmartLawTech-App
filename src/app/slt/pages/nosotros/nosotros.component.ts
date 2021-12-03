@@ -14,6 +14,23 @@ export class NosotrosComponent {
     path : 'assets/lottie/mountain/data.json'
   }
 
+  innovacion : AnimationOptions = {
+    path : 'assets/lottie/3. Innovacion.json'
+  }
+
+  piramide : AnimationOptions = {
+    path : 'assets/lottie/4. Piramide.json'
+  }
+
+  mision : AnimationOptions = {
+    path : 'assets/lottie/5. Mision.json'
+  }
+
+  vision : AnimationOptions = {
+    path : 'assets/lottie/6. Vision.json'
+  }
+
+
   dropdown_classV:string = "valores-dropdown desactivado";
   dropdown_classP:string = "valores-dropdown desactivado";
 
@@ -68,7 +85,7 @@ export class NosotrosComponent {
 
       confidencialidad:{
         titulo: "Confidencialidad",
-        contenido: "Somos autoexigentes, ordenados y perseverantes. Agregamos un esfuerzo extra para convertir los retos y metas en logros y alcanzar la excelencia como práctica habitual"
+        contenido: "Respetamos y protegemos la privacidad con políticas estrictas y tecnologías con estándares de alta seguridad"
       }
 
 

@@ -50,7 +50,9 @@
   <article class="nuevos-modelos" id="nuevos-modelos">
     <h2>SERVICIOS JURÍDICOS DIGITALES</h2>
     <div class="contenido">
-      <img class="icono" src="../../../../assets/icons/3. Nuevos  Modelos2 1.svg" alt="modelos">
+      <ng-lottie [options] = 'serviciosJuridicos'
+                  class="icono"></ng-lottie>
+      <!-- <img class="icono" src="../../../../assets/icons/3. Nuevos  Modelos2 1.svg" alt="modelos"> -->
       <p  class="texto-contenido">
         Diseñamos modelos alternos de prestación de servicios legales acoplados a los avances tecnológicos de la economía global del conocimiento
       </p>
@@ -72,9 +74,9 @@
   <article class="tecnologias-cognitivas" id="tecnologias-cognitivas">
     <h2>TECNOLOGÍAS COGNITIVAS CONFIABLES</h2>
     <div class="contenido">
-      <!-- <ng-lottie [options] = 'options2'
-                  class="icono"></ng-lottie> -->
-      <img class="icono" src="../../../../assets/icons/4. Tecnologias2 2.svg" alt="tecnologias">
+      <ng-lottie [options] = 'tecnologiasCognitivas'
+      class="icono"></ng-lottie>
+      <!-- <img class="icono" src="../../../../assets/icons/4. Tecnologias2 2.svg" alt="tecnologias"> -->
       <p class="texto-contenido">Desarrollamos tecnologías de uso sencillo que transforman datos en información útil para sustituir diagnósticos reactivos por acciones proactivas que contribuyen a la solución de problemas mediante la toma de decisiones más inteligentes
       </p>
     </div>
@@ -84,6 +86,38 @@
       routerLinkActive = "active">Más información</a>
     </div>
     
+    <div class="scroll">
+      <img src="../../../../assets/icons/scroll.svg" alt="scroll">
+      <p>scroll</p>
+    </div>
+
+    <article class="aliados-container">
+      <div class="aliados">
+        <h3>Alianzas:</h3>
+        <div class="logos">
+  
+            <div>
+              <img src="../../../../assets/icons/21. Bancolombia.png" alt="Bancolombia">
+              <p>Grupo Bancolombia</p>
+            </div>
+            
+          
+            <div>
+              <img src="../../../../assets/icons/22. Davivienda.png" alt="Davivienda">
+              <p>Banco Davivienda</p>
+            </div>
+          
+            <div>
+              <img src="../../../../assets/icons/23. Fiduciaria.png" alt="Fiduciaria">
+              <p>Davivienda Fiduciaria</p>
+            </div>
+          
+          
+        </div>
+      </div>
+  
+    </article>
+
   </article>
 
 </main>
