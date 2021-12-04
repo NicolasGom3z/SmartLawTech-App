@@ -234,7 +234,8 @@ main.main-home{
 
     a{
       @include buttonBlue();
-      padding: 6%;
+      padding: 1rem;
+      width: 70%;
       margin: 0 auto;
       margin-top: 2rem;
       margin-bottom: 2rem;
@@ -262,6 +263,7 @@ main.main-home{
 
     p.texto-contenido{
       font-size: 1.6rem;
+      padding: 0 1rem;
 
       @include tablet(){
         font-size: 2rem;
@@ -309,7 +311,7 @@ main.main-home{
 
     &:nth-child(2){
       margin-top: 5rem;
-      padding-bottom: 9rem;
+      padding-bottom: 15%;
 
       .icono{
         order: 2;
@@ -329,12 +331,17 @@ main.main-home{
 
       @include desktop(){
         height: 100vh;
+        padding-bottom: 0;
+
+        .scroll{
+          margin-top: 10rem;
+        }
       }
 
       @include custom(1700){
         margin-top: 0;
         padding-top: 0;
-        padding-bottom: 15rem;
+        
       }
       
     }
@@ -346,6 +353,10 @@ main.main-home{
       
     }
     
+  }
+
+  .aliados-section{
+    // padding-bottom: 15rem;
   }
 
   .aliados-container{
@@ -365,7 +376,7 @@ main.main-home{
     }
   
     @include desktop(){
-      margin-top: 8rem;
+    margin-top: 0;
       padding: 2rem 10rem;
     }
     

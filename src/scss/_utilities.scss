@@ -42,3 +42,10 @@ html {
   font-style: italic;
   font-weight: bold;
 }
+
+.mountain-anim{
+
+  @include desktop(){
+    margin-top: 2rem;
+  }
+}
