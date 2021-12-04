@@ -12,7 +12,7 @@
 
   article{
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
 
     @include desktop(){
       margin: 0 2rem;
@@ -212,7 +212,7 @@
       padding-top: 5rem;
       height: auto;
       @include desktop(){
-        height: 100vh;
+        min-height: 100vh;
 
         img{
           margin-right: 0;
@@ -253,7 +253,7 @@
       padding-top: 2rem;
       
       @include desktop(){
-        height: 100vh;
+        min-height: 100vh;
 
         img{
           align-self: flex-end;
@@ -276,7 +276,7 @@
       padding-bottom: 5rem;
       @include desktop(){
         align-items: stretch;
-        height: 100vh;
+        min-height: 100vh;
         padding-top: 10rem;
         padding-bottom: 25rem;
       }
