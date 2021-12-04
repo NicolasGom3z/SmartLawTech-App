@@ -62,6 +62,7 @@
 
 .card{
   margin-top: 1rem;
+  margin-bottom: 2rem;
   padding: 4rem;
   background: rgba(0, 0, 0, 0.35);
   border-radius: 15px;
@@ -72,6 +73,7 @@
   @include desktop(){
     flex-basis: calc(50% - 10rem);
     min-width: 35.5rem;
+    margin-bottom: 0;
     // background-color: transparent;
   }
 
@@ -104,13 +106,7 @@
     }
   }
 
-  &:nth-child(1){
-    margin-bottom: 2rem;
 
-    @include desktop(){
-      margin-bottom: 0;
-    }
-  }
 
   a{
     width: 80%;
@@ -154,7 +150,7 @@ main.main-home{
     align-items: center;
 
     @include custom(1400){
-      margin: 0 12rem;
+      margin: 0 30rem;
     }
     // @include custom(1700){
     //   padding-top: 0;
@@ -190,9 +186,6 @@ main.main-home{
           margin-right: 4rem;
           max-width: 28rem;
         }
-        @include custom(1700){
-          max-width: 32rem;
-        }
 
       }
 
@@ -211,11 +204,17 @@ main.main-home{
     
       @include subTitle();
 
+      &.servicios{
+        @include desktop(){
+          margin-bottom: 1rem;
+          margin-top: 5rem;
+        }
+      }
     }
 
     .button{
       margin-top: 1rem;
-      width: 80%;
+      width: 100%;
 
       
       @include tablet(){
@@ -224,7 +223,6 @@ main.main-home{
       }
       @include desktop(){
         width: auto;
-        margin-top: 2rem
       }
     }
 
@@ -256,6 +254,7 @@ main.main-home{
         width: 25rem;
         padding: 5% 0;
         margin-top: 0;
+        margin-left: 2rem;
       }
       
       
@@ -274,27 +273,43 @@ main.main-home{
         // font-size: 2.5rem;
         font-size: 2rem;
         max-width: 65%;
-        
+        padding-left: 5rem;
       }
     }
+    .button{
+      @include desktop(){
+        align-self: flex-start;
+        margin-left: 8rem;
+        margin-bottom: 8rem;
+      }
 
+      @include custom(1100){
+        margin-left: 10rem;
+      }
+
+      @include custom(1400){
+        margin-left: 7rem;
+      }
+      
+      @include custom(1800){
+        margin-left: 9rem;
+      }
+    
+      
+    }
     &:nth-child(1){
       
+      @include desktop(){
+        padding-top: 10rem;
+      }
+
       .icono{
         order: 2;
       }
       p{
         text-align: left;
       }
-      .button{
-        @include desktop(){
-          align-self: flex-start;
-          margin-left: 8%;
-        }
-        @include custom(1500){
-          margin-left: 6%;
-        }
-      }
+      
 
       .scroll{
         @include desktop(){
@@ -310,7 +325,7 @@ main.main-home{
     }
 
     &:nth-child(2){
-      margin-top: 5rem;
+      margin-top: 4rem;
       padding-bottom: 15%;
 
       .icono{
@@ -319,19 +334,21 @@ main.main-home{
       p{
         text-align: left;
       }
-      .button{
-        @include desktop(){
-          align-self: flex-start;
-          margin-left: 8%;
-        }
-        @include custom(1500){
-          margin-left: 6%;
-        }
-      }
+      // .button{
+      //   @include desktop(){
+      //     align-self: flex-start;
+      //     margin-left: 8%;
+      //     margin-bottom: 4rem;
+      //   }
+      //   @include custom(1500){
+      //     margin-left: 6%;
+      //   }
+      // }
 
       @include desktop(){
         height: 100vh;
         padding-bottom: 0;
+        
 
         .scroll{
           margin-top: 10rem;
@@ -356,7 +373,11 @@ main.main-home{
   }
 
   .aliados-section{
-    // padding-bottom: 15rem;
+    @include tablet(){
+      padding-bottom: 15rem;
+
+    }
+    
   }
 
   .aliados-container{
