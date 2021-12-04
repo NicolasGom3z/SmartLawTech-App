@@ -296,12 +296,13 @@
         margin-bottom: 2rem;
 
         @include desktop(){
-          max-width: 80%;
+          max-width: 100%;
           margin: 0 auto;
           margin-bottom: 5rem;
           padding: 3rem 4rem;
         }
 
+      
         h2{
           text-align: center;
           margin-left: 0;
