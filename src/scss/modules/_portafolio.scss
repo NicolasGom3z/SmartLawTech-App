@@ -100,7 +100,7 @@
     
 
     .card{
-      padding: 3% 4rem;
+      padding: 3% 2rem;
       margin-top: 2rem;
 
       @include desktop(){
@@ -128,8 +128,8 @@
         
       }
       p{
-        text-align: center;
-
+        text-align: left;
+        padding: 0 1rem;
         @include desktop(){
           margin-bottom: 2rem ;
           min-height: 16.8rem;

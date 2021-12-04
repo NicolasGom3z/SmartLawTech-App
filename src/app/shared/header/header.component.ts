@@ -1,5 +1,5 @@
-import { Component, Input, Output, ViewChild, ElementRef, Renderer2 } from '@angular/core';
-
+import { Component, ViewChild, ElementRef, Renderer2 } from '@angular/core';
+import { AnimationOptions } from 'ngx-lottie';
 
 @Component({
   selector: 'app-header',
@@ -12,6 +12,9 @@ export class HeaderComponent {
   @ViewChild('open') open !: ElementRef;
   @ViewChild('close') close !: ElementRef;
   
+  logo : AnimationOptions = {
+    path : 'assets/lottie/mountain/data.json'
+  }
 
   burgerButton(){
     this.render.addClass(this.mobile_menu.nativeElement,'slide-in-right');

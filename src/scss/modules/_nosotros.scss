@@ -186,11 +186,14 @@
     
 
     .scroll{
-      margin-top: 2rem;
+      margin-top: 8rem;
       @include custom(1600){
         margin-top: 10rem;
       }
 
+      p{
+        font-size: 1.4rem;
+      }
     }
     
 
@@ -217,9 +220,18 @@
 
     }
 
+    &.que-hacemos .texto{
+        h2{
+          margin-left: 0;
+        }
+        p{
+          margin: 0;
+        }
+    }
+
     &.vision{
       height: auto;
-      padding-top: 5rem;
+      padding-top: 2rem;
       
       @include desktop(){
         height: 100vh;

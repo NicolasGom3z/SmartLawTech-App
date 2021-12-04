@@ -140,6 +140,12 @@
         margin-top: 1rem;
         padding: .5rem;
         font-weight: 700;
+        cursor: pointer;
+
+          &:hover{
+            text-decoration: underline;
+          }
+        
         }
         
       }
