@@ -17,11 +17,21 @@
     margin  :2rem;
     margin-bottom: 0;
 
+    @include desktop(){
+      margin: 7rem auto 4rem auto;
+      max-width: 135rem;
+      margin-bottom: 10rem
+      
+    }
+
     h2,h3{
       @include subTitle();
       text-align: left;
       margin-top: 2rem;
 
+      @include desktop(){
+        margin-bottom: 1rem;
+      }
       
 
     }
@@ -46,6 +56,14 @@
   main{
     display: flex;
     flex-direction: column;
+
+    @include desktop(){
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around;
+      margin: 0 18rem;
+    }
   }
   
   article{
@@ -61,10 +79,13 @@
     }
     
     @include desktop(){
-      min-height: 100vh;
+      flex-basis: calc(50% - 1rem);
+      max-height: 80rem;
       flex-direction: row;
       align-items: center;
-      margin-top: 0;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
     }
 
     
@@ -75,7 +96,7 @@
 
       @include desktop(){
         order: 2;
-        width: 100%;
+        width: 70%;
         max-width:40.5rem;
       }
 
@@ -175,14 +196,14 @@
       
       }
 
-      @include desktop(){
-        margin-top: 2rem;
-      }
     }
 
     &:nth-child(2){
-      padding-bottom: 
-      8rem;
+      padding-bottom: 8rem;
+
+      @include desktop(){
+        padding: 0;
+      }
     }
 
   }
@@ -223,6 +244,9 @@
   .edwin {
     .linkedin{
       margin-bottom: 8rem;
+      @include desktop(){
+        margin-bottom: 0;
+      }
     }
   }
 
