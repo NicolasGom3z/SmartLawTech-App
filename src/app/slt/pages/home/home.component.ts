@@ -13,9 +13,17 @@ export class HomeComponent {
     path : 'assets/lottie/mountain/data.json'
   }
 
-  options2 : AnimationOptions = {
-    path : 'assets/lottie/tecnologias/data.json'
+  serviciosJuridicos : AnimationOptions = {
+    path : 'assets/lottie/1.serviciosJuridicos.json'
   }
+
+  tecnologiasCognitivas : AnimationOptions = {
+    path : 'assets/lottie/2.TecnologiasCognitivas.json'
+  }
+  
+
+
+
 
   constructor() { }
 

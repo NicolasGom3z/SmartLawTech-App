@@ -52,7 +52,7 @@
 
     @include desktop(){
       // font-size: 2.5rem;
-      font-size: 2rem;
+      font-size: 2.4rem;
       margin: 0 1rem;
       padding: 1rem 5rem;
       max-width: none;
@@ -62,6 +62,7 @@
 
 .card{
   margin-top: 1rem;
+  margin-bottom: 2rem;
   padding: 4rem;
   background: rgba(0, 0, 0, 0.35);
   border-radius: 15px;
@@ -72,6 +73,7 @@
   @include desktop(){
     flex-basis: calc(50% - 10rem);
     min-width: 35.5rem;
+    margin-bottom: 0;
     // background-color: transparent;
   }
 
@@ -104,13 +106,7 @@
     }
   }
 
-  &:nth-child(1){
-    margin-bottom: 2rem;
 
-    @include desktop(){
-      margin-bottom: 0;
-    }
-  }
 
   a{
     width: 80%;
@@ -154,7 +150,7 @@ main.main-home{
     align-items: center;
 
     @include custom(1400){
-      margin: 0 12rem;
+      margin: 0 30rem;
     }
     // @include custom(1700){
     //   padding-top: 0;
@@ -163,7 +159,7 @@ main.main-home{
     .contenido{
       @include contenido();
 
-      img{
+      .icono{
         margin: 2% auto;
         width: 60%;
         max-width: 20rem;
@@ -179,7 +175,7 @@ main.main-home{
         @include desktop(){
           margin: 0;
           padding: 2%;
-          max-width: 23rem;
+          max-width: 25rem;
           // order: 2;
         }
 
@@ -189,9 +185,6 @@ main.main-home{
         @include custom(1500){
           margin-right: 4rem;
           max-width: 28rem;
-        }
-        @include custom(1700){
-          max-width: 32rem;
         }
 
       }
@@ -211,11 +204,17 @@ main.main-home{
     
       @include subTitle();
 
+      &.servicios{
+        @include desktop(){
+          margin-bottom: 1rem;
+          margin-top: 5rem;
+        }
+      }
     }
 
     .button{
       margin-top: 1rem;
-      width: 80%;
+      width: 100%;
 
       
       @include tablet(){
@@ -224,7 +223,6 @@ main.main-home{
       }
       @include desktop(){
         width: auto;
-        margin-top: 2rem
       }
     }
 
@@ -234,7 +232,8 @@ main.main-home{
 
     a{
       @include buttonBlue();
-      padding: 6%;
+      padding: 1rem;
+      width: 70%;
       margin: 0 auto;
       margin-top: 2rem;
       margin-bottom: 2rem;
@@ -255,6 +254,7 @@ main.main-home{
         width: 25rem;
         padding: 5% 0;
         margin-top: 0;
+        margin-left: 2rem;
       }
       
       
@@ -262,6 +262,7 @@ main.main-home{
 
     p.texto-contenido{
       font-size: 1.6rem;
+      padding: 0 1rem;
 
       @include tablet(){
         font-size: 2rem;
@@ -272,27 +273,43 @@ main.main-home{
         // font-size: 2.5rem;
         font-size: 2rem;
         max-width: 65%;
-        
+        padding-left: 5rem;
       }
     }
+    .button{
+      @include desktop(){
+        align-self: flex-start;
+        margin-left: 8rem;
+        margin-bottom: 8rem;
+      }
 
+      @include custom(1100){
+        margin-left: 10rem;
+      }
+
+      @include custom(1400){
+        margin-left: 7rem;
+      }
+      
+      @include custom(1800){
+        margin-left: 9rem;
+      }
+    
+      
+    }
     &:nth-child(1){
       
-      img.icono{
+      @include desktop(){
+        padding-top: 10rem;
+      }
+
+      .icono{
         order: 2;
       }
       p{
         text-align: left;
       }
-      .button{
-        @include desktop(){
-          align-self: flex-start;
-          margin-left: 8%;
-        }
-        @include custom(1500){
-          margin-left: 6%;
-        }
-      }
+      
 
       .scroll{
         @include desktop(){
@@ -308,33 +325,40 @@ main.main-home{
     }
 
     &:nth-child(2){
-      margin-top: 5rem;
-      padding-bottom: 22rem;
+      margin-top: 4rem;
+      padding-bottom: 15%;
 
-      img.icono{
+      .icono{
         order: 2;
       }
       p{
         text-align: left;
       }
-      .button{
-        @include desktop(){
-          align-self: flex-start;
-          margin-left: 8%;
-        }
-        @include custom(1500){
-          margin-left: 6%;
-        }
-      }
+      // .button{
+      //   @include desktop(){
+      //     align-self: flex-start;
+      //     margin-left: 8%;
+      //     margin-bottom: 4rem;
+      //   }
+      //   @include custom(1500){
+      //     margin-left: 6%;
+      //   }
+      // }
 
       @include desktop(){
         height: 100vh;
+        padding-bottom: 0;
+        
+
+        .scroll{
+          margin-top: 10rem;
+        }
       }
 
       @include custom(1700){
         margin-top: 0;
         padding-top: 0;
-        padding-bottom: 15rem;
+        
       }
       
     }
@@ -346,6 +370,100 @@ main.main-home{
       
     }
     
+  }
+
+  .aliados-section{
+    @include tablet(){
+      padding-bottom: 15rem;
+
+    }
+    
+  }
+
+  .aliados-container{
+  
+    height: auto;
+    margin: 0 2rem;
+    margin-top: 0;
+    padding: 0 1rem;
+    padding-bottom: 15rem;
+
+  
+    @include tablet(){
+      margin: 0;
+      padding: 2rem 3rem;
+      background-color: rgba(0,0,0,0.35);
+      
+    }
+  
+    @include desktop(){
+    margin-top: 0;
+      padding: 2rem 10rem;
+    }
+    
+    .aliados{
+      width: 100%;
+    }
+  
+    h3{
+      color : white;
+      font-size: 1.8rem;
+    }
+  
+    img{
+      
+      max-width: 70%;
+      margin: 2rem 0;
+      margin-bottom: 0;
+      
+      @include custom(400){
+        max-width: 22rem;
+      }
+  
+      @include tablet(){
+        padding-bottom: 2rem;
+      }
+      
+      
+    }
+  
+    .logos{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      @include tablet(){
+        flex-direction: row;
+        justify-content: space-around;
+      }
+  
+      div{
+        text-align: center;
+  
+        @include custom(1800){
+  
+          &:nth-child(1){
+            margin-left: 15rem;
+          }
+          &:nth-child(3){
+            margin-right: 15rem;
+          }
+    
+        }
+  
+        p{
+          margin-bottom: 2rem;
+          color: white;
+          font-size: 1.6rem;
+  
+          @include desktop(){
+            margin-top: 0;
+          }
+        }
+  
+      }
+      
+    }
   }
 
 }

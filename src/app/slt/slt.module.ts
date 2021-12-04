@@ -30,11 +30,7 @@ export function playerFactory() {
     
   ],
   exports : [
-    ErrorComponent,
-    HomeComponent,
-    NosotrosComponent,
-    PortafolioComponent,
-    ContactoComponent
+    
   ],
   imports: [
     CommonModule,

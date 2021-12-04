@@ -33,7 +33,7 @@ html {
     margin: 2rem;
 
     p{
-      font-size: 1.5rem;
+      font-size: 1.4rem; 
     }
   }
   
@@ -41,4 +41,11 @@ html {
 .subtitle{
   font-style: italic;
   font-weight: bold;
+}
+
+.mountain-anim{
+
+  @include desktop(){
+    margin-top: 2rem;
+  }
 }

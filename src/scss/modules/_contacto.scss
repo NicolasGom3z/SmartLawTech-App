@@ -11,6 +11,16 @@
   min-height: 100vh;
   width: 100%;
 
+
+  h1{
+    max-width: 20rem;
+    text-align: center;
+
+    @include tablet(){
+      max-width: none;
+    }
+  }
+
   h2{
     
     color: white;
@@ -48,17 +58,34 @@
   align-items: center;
   justify-content: space-between;
 
+
   @include tablet(){
     margin: 0 auto;
     width: 60%;
   }
 
   @include desktop(){
+    margin-top:5rem;
     flex-direction: row;
     width: 80%;
   }
   @include custom(1500){
     width: 70%;
+  }
+
+  & div:nth-child(1){
+    margin-top: 4rem;
+    @include desktop(){
+      margin-top: 2rem;
+    }
+  }
+
+  & div:nth-child(3){
+    margin-bottom: 10rem;
+
+    @include desktop(){
+      margin-bottom: 0;
+    }
   }
 
   div{
@@ -69,7 +96,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 100%;
     min-height: 21.5rem;
     border-radius: 15px;
 
@@ -94,7 +121,7 @@
     width: 80%;
     
     @include buttonBlue();
-    margin-top: 1rem;
+    margin-top: 2rem;
     padding: 6%;
     transition: 0.2s ease-in ;
 
@@ -104,6 +131,9 @@
       margin-top: 2rem;
     }
   }
+
+
+  
 
 
 }
