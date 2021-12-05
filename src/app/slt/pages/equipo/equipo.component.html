@@ -20,8 +20,8 @@
     <p>Somos un equipo interdisciplinario experimentado, comprometido en proveer innovaciones fiables que transformen los tradicionales modelos de prestación de servicios jurídicos, adaptándolos a las cambiantes necesidades de la economía global del conocimiento</p>
   </section>
 
-  <main>
-    <article class="juan">
+  <main [class]="main_Class">
+    <article [class]="flex_classJ">
 
       <div class="article-img">
         <img src="../../../../assets/icons/25. Juan.png" alt="Juan Jorge Almonacid">
@@ -62,15 +62,15 @@
       </div>
     </article>  
 
-    <article class="edwin">
-      <div class="article-img">
+    <article [class]="flex_classE">
+      <div class="article-img reverse">
         <img src="../../../../assets/icons/24.Edwin.png" alt="Edwin Bernal">
         <div class="article-title">
           <h3>Edwin Fernando Bernal Alba</h3>
           <p>Director de Proyectos - PMO</p>
           <p>Socio fundador</p>
           <div [class]="ver_classE">
-            <p (click)="dropDownEdwin()" class="pulsate-bck">
+            <p (click)="dropDownEdwin()" class="pulsate-bck" >
               <small>ver más</small>
             </p>
             <div class="linkedin">
@@ -83,26 +83,28 @@
         </div>
       </div>
 
-    </article>
-
-    <div class="dropdown">
-      <div [class]="dropdown_classE">
-        <div class="contenedor">
-          <div class="article-main">
-            <p>Ingeniero de diseño y automatización electrónica de la Universidad de la Salle que durante veinte años ha adquirido una capacidad probada en implementación de proyectos de infraestructura tecnológica, sistemas de información y seguridad informática, y seguimiento y control en procesos de TI.</p>
-            <p>Cuenta con los títulos de project management professional del Intelligent Training – Project Manager Institute; certificado continuidad de negocio ISO 22301 y auditor interno seguridad de información ISO 27001 de SGS Colombia; y diplomado en telemática y negocios por internet de la Escuela Colombiana de Ingeniería</p>
-            
-            <div class="linkedin ">
-              <a href="https://www.linkedin.com/in/juan-jorge-almonacid-sierra-673581164/" target="_blank">
-                <img src="../../../../assets/icons/26.LinkedIn.svg" alt="LinkedIn">
-              </a>
+      <div class="dropdown">
+        <div [class]="dropdown_classE">
+          <div class="contenedor">
+            <div class="article-main">
+              <p>Ingeniero de diseño y automatización electrónica de la Universidad de la Salle que durante veinte años ha adquirido una capacidad probada en implementación de proyectos de infraestructura tecnológica, sistemas de información y seguridad informática, y seguimiento y control en procesos de TI.</p>
+              <p>Cuenta con los títulos de project management professional del Intelligent Training – Project Manager Institute; certificado continuidad de negocio ISO 22301 y auditor interno seguridad de información ISO 27001 de SGS Colombia; y diplomado en telemática y negocios por internet de la Escuela Colombiana de Ingeniería</p>
+              
+              <div class="linkedin ">
+                <a href="https://www.linkedin.com/in/juan-jorge-almonacid-sierra-673581164/" target="_blank">
+                  <img src="../../../../assets/icons/26.LinkedIn.svg" alt="LinkedIn">
+                </a>
+              </div>
             </div>
+            
           </div>
-          
         </div>
       </div>
-    </div>
+  
 
+    </article>
+
+    
   </main>
 
 
