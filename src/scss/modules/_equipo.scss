@@ -16,12 +16,26 @@
   section{
     margin  :2rem;
     margin-bottom: 0;
+    
+    @include custom(400){
+      margin: 2rem 3rem
+    }
+
+    @include desktop(){
+      margin: 7rem auto 4rem auto;
+      max-width: 135rem;
+      margin-bottom: 10rem
+      
+    }
 
     h2,h3{
       @include subTitle();
       text-align: left;
       margin-top: 2rem;
 
+      @include desktop(){
+        margin-bottom: 1rem;
+      }
       
 
     }
@@ -46,6 +60,29 @@
   main{
     display: flex;
     flex-direction: column;
+
+    &.activado{
+      flex-direction: column;
+    }
+
+    @include desktop(){
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around;
+      margin: 0 8rem;
+      padding-bottom: 20rem;
+    }
+    @include custom(1300){
+      margin:  0 15rem;
+    }
+    @include custom(1500){
+      margin:  0 20rem;
+    }
+    @include custom(1500){
+      margin:  0 30rem;
+      
+    }
   }
   
   article{
@@ -61,10 +98,12 @@
     }
     
     @include desktop(){
-      min-height: 100vh;
-      flex-direction: row;
+      flex-basis: calc(50% - 1rem);
+      max-height: 80rem;
       align-items: center;
-      margin-top: 0;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
     }
 
     
@@ -74,27 +113,30 @@
       text-align: center;
 
       @include desktop(){
-        order: 2;
-        width: 100%;
+        
+        width: 70%;
         max-width:40.5rem;
       }
 
+      &.reverse{
+        @include desktop(){
+          order: 2;
+        }
+        
+      }
 
     }
 
     img{
-      max-width: 60%;
+      max-width: 21.6rem;
 
-      @include custom(500){
-        max-width: 60%;
-      }
 
       @include tablet(){
-        max-width: 40%;
+        max-width: 24rem;
       }
 
       @include desktop(){
-        max-width: 100%;
+        max-width: 70%;
       }
       
     }
@@ -135,6 +177,8 @@
 
       .mas{
 
+      
+
         p{
         display: inline-flex;
         margin-top: 1rem;
@@ -142,9 +186,9 @@
         font-weight: 700;
         cursor: pointer;
 
-          &:hover{
-            text-decoration: underline;
-          }
+        &:hover{
+          text-decoration: underline;
+        }
         
         }
         
@@ -175,16 +219,26 @@
       
       }
 
+    }
+
+    
+
+    &:nth-child(2){
+      padding-bottom: 8rem;
+
       @include desktop(){
-        margin-top: 2rem;
+        padding: 0;
       }
     }
 
-    &:nth-child(2){
-      padding-bottom: 
-      8rem;
-    }
+    &.row-active{
 
+      @include desktop(){
+        flex-direction: row;
+        margin-bottom: 10rem;
+      }
+      
+    }
   }
 
 
@@ -223,9 +277,17 @@
   .edwin {
     .linkedin{
       margin-bottom: 8rem;
+      @include desktop(){
+        margin-bottom: 0;
+      }
     }
   }
 
+  .dropdown{
+    @include desktop(){
+      flex-basis: 45%;
+    }
+  }
 
   .dropdown-edwin{
     margin-bottom: 5rem;
