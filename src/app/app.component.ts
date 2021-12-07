@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { AnimationOptions } from 'ngx-lottie';
+
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +10,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'SmartLawTech-App';
+  
+
+  logo : AnimationOptions = {
+    path : 'assets/lottie/mountain/data.json'
+  }
+
+  constructor(){
+
+  }
+
 }

@@ -141,7 +141,7 @@
 
   a{
     width: 80%;
-    
+    min-width: 15.2rem;
     @include buttonBlue();
     margin-top: 2rem;
     padding: 6%;

@@ -6,6 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { SltModule } from './slt/slt.module';
 import { SharedModule } from './shared/shared.module';
 
+import { LottieModule } from 'ngx-lottie';
+import player from 'lottie-web';
+
+
+export function playerFactory() {
+  return player;
+}
+
 
 
 @NgModule({
@@ -15,6 +23,7 @@ import { SharedModule } from './shared/shared.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    LottieModule.forRoot({ player: playerFactory }),
   
 
     SltModule,

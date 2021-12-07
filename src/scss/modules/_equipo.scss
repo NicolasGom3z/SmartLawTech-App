@@ -23,9 +23,30 @@
 
     @include desktop(){
       margin: 7rem auto 4rem auto;
-      max-width: 135rem;
+      max-width: 97rem;
       margin-bottom: 10rem
       
+    }
+
+    @include custom(1400){
+      max-width: 114rem;
+    }
+
+    .section-title{
+      display: flex;
+      align-items: center;
+      h2{
+        padding-left: 1rem;
+      }
+
+      img{
+        max-width: 8rem;
+
+        @include tablet(){
+          max-width: 12rem
+        }
+      }
+
     }
 
     h2,h3{
@@ -43,7 +64,7 @@
       font-size: 1.6rem;
 
       @include tablet(){
-        padding: 0 10rem;
+        
         font-size: 2rem;
       }
 
